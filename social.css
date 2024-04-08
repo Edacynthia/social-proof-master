@@ -33,7 +33,7 @@ body{
     color:  hsl(300, 43%, 22%);
     font-weight: 700;
     font-size: 1.2rem;
-    margin: 0rem 6rem;
+    margin: 0rem 2rem;
 }
 li{
     list-style: none;
@@ -48,11 +48,12 @@ li{
 }
 .boxes{
     display: flex;
-    gap: 1%;
+    gap: 2%;
+    padding: 3rem;
 }
 .box ,.box2 ,.box3{
     background-color: hsl(300, 43%, 22%);
-    color:  hsl(300, 24%, 96%);
+    color: hsl(300, 24%, 96%);
     border-radius: 8px;
     padding: 2rem 3rem 2rem 2rem;
     line-height: 1.5rem;
@@ -80,12 +81,82 @@ li{
     margin-top: 2.4rem;
 }
 
-@media (min-width: 360px) and (max-width: 740px){
-    .left{
-        padding-top: 500px;
-         
+@media (min-width: 360px) and (max-width: 800px){
+    .boxes{
+        flex-direction: column;
+        width: 114%;
+        padding-left: 1px;
     }
+
+    .right h1, 
+    .right p{
+        width: 90%;
+        padding-right: 1px;
+    }
+    .left{
+        width: 100%;
+        padding-top: 400px;
+        margin: 1px;
+        margin-left: -250px;
+    }
+}
+@media (min-width: 390px) and (max-width: 844px){
+    .boxes{
+        flex-direction: column;
+        width: 107%;
+        padding-right: 5px;
+    }
+
+    .right h1, 
+    .right p{
+        width: 90%;
+        
+    }
+    .left{
+        width: 100%;
+        padding-top: 400px;
+        margin: 1px;
+        margin-left: -250px;
+    }
+}
+@media (min-width: 320px) and (max-width: 568px){
+    .boxes{
+        flex-direction: column;
+        width: 115%;
+    }
+
+    .right h1, 
+    .right p{
+        width: 90%;
+        padding-right: 1px;
+    }
+    .left{
+        width: 100%;
+        padding-top: 400px;
+        margin: 1px;
+        margin-left: -250px;
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
     .boxes{
         flex-direction: column;
     }
+
+    .right h1, 
+    .right p{
+        width: 90%;
+        padding-right: 1px;
+    }
+    .left{
+        width: 100%;
+        padding-top: 400px;
+        margin: 1px;
+        margin-left: -250px;
+    }
 }
+.boxes p{
+    padding: px;
+}
+    
